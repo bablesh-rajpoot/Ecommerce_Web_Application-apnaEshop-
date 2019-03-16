@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add-Product</title>
+        <link rel="stylesheet" type="text/css" href="styles/stylesheet.css"> 
+        <script type="text/javascript" src="scripts/jquery.js"></script>
+        <script type="text/javascript" src="scripts/additems.js"></script>
+        <script type="text/javascript" src="scripts/addproduct.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="Cache-control" content="no-cache"/>
+        <meta http-equiv="expires" content="-1"/>
+        <meta http-equiv="pragma" content="no-cache"/>
+    </head>
+    <body>
+   <form ><p>-: Add New Product :-</p>
+    <div style='float:left,padding-left:12px'>
+    <table border='2' id='tblproduct'>
+        <tr><th>Product Name:</th><td><input type='text' name='pname' id='pname'><br><span id='sp1'></span></td></tr>
+        <tr><th>Product Type:</th><td><input type='text' name='ptype' id='ptype'><br><span id='sp2'></span></td></tr>
+        <tr><th>Product Price:</th><td><input type='text' name='pprice' id='pprice'><br><span id='sp3'></span></td></tr>
+        <tr><th>Product Desc:</th><td><input type='text' name='pdesc' id='pdesc'><br><span id='sp4'></span></td></tr>
+        <tr><th>Product Image:</th><td><input type='file' name='pimage' id='pimage'><br><span id='sp5'></span></td></tr>
+    <tr><th><input type='button' value='Add Product' id='addbtn' onclick=connect()></th><th><input type='RESET' name='productname' value='Clear'></th></tr>
+    </table>
+    </div></form>
+    <span id='result'></span>
+    </body>
+</html>
